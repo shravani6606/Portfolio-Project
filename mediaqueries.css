@@ -1,0 +1,125 @@
+/*@media screen and (max-width: 1200px) {
+  #desktop-nav {
+     display: none;
+     }
+  #hamburger-nav { 
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    padding: 0 1rem; 
+}
+
+  section, footer { 
+    display: block; 
+    visibility: hidden;
+     height: 0;
+      overflow: hidden; } 
+  #profile { visibility: visible; height: auto; }
+  section, footer {
+  display: block;
+  height: auto; 
+  visibility: visible;
+}
+}*/
+/*
+@media screen and (max-width: 1200px) {
+  #desktop-nav {
+    display: none;
+  }
+  #hamburger-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1rem;
+  }
+
+  section, footer {
+    visibility: hidden;
+    height: 0;
+    overflow: hidden;
+    transition: all 0.3s ease;
+  }
+
+  #profile {
+    visibility: visible;
+    height: auto;
+    overflow: visible;
+  }
+
+  
+  .menu-links {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background: white;
+    width: fit-content;
+  }
+
+  .menu-links.open {
+    display: flex;
+  }
+  
+}*/
+@media screen and (max-width: 1200px) {
+  #desktop-nav {
+    display: none;
+  }
+#profile {
+    flex-wrap: wrap;          /* stack on small screens */
+    text-align: center;
+    justify-content: center;
+  }
+  
+  .section__pic-container img {
+    width: 180px;
+    height: 180px;
+  }
+
+  .section__text {
+    max-width: 90%;
+    align-items: center;   
+  }
+  #hamburger-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1rem;
+  }
+
+  /* Hide all sections except profile */
+  section, footer {
+    display: none;  /* fully hide sections */
+  }
+
+  #profile {
+    display: block; /* only profile visible */
+  }
+
+  /* Hamburger menu */
+  .menu-links {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background: white;
+    width: fit-content;
+  }
+
+  .menu-links.open {
+    display: flex;
+  }
+
+  .project-card {
+    max-width: 300px;
+  }
+  .project-img {
+    max-width: 150px;
+  }
+
+}
+
+
+
